@@ -10,7 +10,13 @@
   },
   "scripts": {
     "contract": "yarn workspace contract",
-    "client": "yarn workspace client",
+    "client": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace client",
     "test": "yarn workspace contract test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.18"
   }
 }
